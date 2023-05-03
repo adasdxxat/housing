@@ -14,10 +14,10 @@ var config = {
     footer: 'Data Source: See <a href = "https://www.nyc.gov/site/planning/data-maps/open-data/dwn-housing-database.page#housingdevelopmentunit">NYC DCP Housing Dataset</a> <p> Image Sources: Google Map <p> Full Report: See <a href = "https://www.nyc.gov/assets/planning/download/pdf/plans-studies/city-of-yes/city_of_yes_info_session_102722.pdf">City of Yes',
     chapters: [
         {
-            id: 'slug-style-id',
+            id: 'chapter_1',
             alignment: 'left',
             hidden: false,
-            title: 'Public Housing with Flood Risk in NYC',
+            title: 'Neighborhood Tabulation Areas (NTAs) Net Housing Units 2021',
             description: 'In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = "https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page">without power for days or even weeks</a>. New York City Housing Authority public housing developments were affected. <a href="https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf">24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected</a>. With rising sea levels from climate change and the <a href="https://www.nytimes.com/2017/04/18/magazine/when-rising-seas-transform-risk-into-certainty.html">promise</a> of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this? ',
             location: {
                 center: [-74.23410, 40.71995],
