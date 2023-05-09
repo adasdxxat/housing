@@ -309,14 +309,14 @@ var scroller = scrollama();
 
 map.on("load", function() {
     if (config.use3dTerrain) {
-        map.addSource('mapbox-dem', {
+        map.addSource('mapbox-dem1', {
             'type': 'raster-dem',
             'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
             'tileSize': 512,
             'maxzoom': 14
         });
         // add the DEM source as a terrain layer with exaggerated height
-        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+        map.setTerrain({ 'source': 'mapbox-dem1', 'exaggeration': 1.5 });
 
         // add a sky layer that will show when the map is highly pitched
         map.addLayer({
