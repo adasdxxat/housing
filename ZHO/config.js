@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/ds2333/clh8bzgsl01r501p882rgfsjp',
+    style: 'mapbox://styles/ds2333/clhps6dlv00nm01qncoxb7mim',
     accessToken: 'pk.eyJ1IjoiZHMyMzMzIiwiYSI6ImNsOHg1cGplZTAzYXozb3FzYWNnYmNsZjYifQ.3SePdbb2OGmTcQfqHc2cUw',
     showMarkers: false,
     //projection: 'equirectangular',
@@ -19,7 +19,7 @@ var config = {
             hidden: false,
             title: 'Intro',
             // image: 'images/redlining_legend.png',
-            description: 'Home Owners’ Loan Corporation (HOLC) made a redlining map of New York City in 1930s. <p>Neighborhoods that were deemed “hazardous” were shaded in red on maps,and banks were encouraged to avoid lending in those areas.',
+            description: "New York City has not produced enough housing to keep up with the rapid growth of population and jobs that has happened in the city in recent decades. “When you look at housing production,” said <a href = 'https://www.ny1.com/nyc/all-boroughs/housing/2022/10/07/new-york-city-housing-supply-demand'> Basha Gerhards</a>, “we are a least 10 years behind.”<p>The range of housing types and the areas of housing has become more limited since zoning was introduced.The zoning rules have many restrictions and are very redundant.<p>When I was looking into the zoning history, I discovered that many rules are rooted in a history of discrimination and exclusion.",
             location: {
                 center: [-74.23410, 40.71995],
                 zoom: 9.44,
@@ -32,8 +32,9 @@ var config = {
             onChapterEnter: [
             { layer: 'nta-poin-2110', opacity: 0 },
             { layer: 'redlining-nyc-line', opacity: 0 },
+            { layer: 'nyc-bound', opacity: 0.65 },
             { layer: 'zoning-r', opacity: 0 },
-            { layer: 'redlining-nyc-area', opacity: 1 },
+            { layer: 'redlining-nyc-area', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0 },
             { layer: 'mapbox-dem', opacity: 0 }
              ],
@@ -60,6 +61,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0 },
             { layer: 'redlining-nyc-line', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0.65 },
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0 },
             { layer: 'zoning-r', opacity: 0 },
             { layer: 'mapbox-dem', opacity: 0 }
@@ -86,6 +88,7 @@ var config = {
             onChapterEnter: [
             { layer: 'nta-poin-2110', opacity: 0.65 },
             { layer: 'redlining-nyc-line', opacity: 0 },
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
             { layer: 'housing-nta-2110', opacity: 0 },
             { layer: 'zoning-r', opacity: 0 },
@@ -115,6 +118,7 @@ var config = {
             { layer: 'redlining-nyc-line', opacity: 1 },
             { layer: 'zoning-r', opacity: 1 },
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0 },
             { layer: 'mapbox-dem', opacity: 0 }
             ],
@@ -141,6 +145,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65 },
             { layer: 'zoning-r', opacity: 0 },
             { layer: 'mapbox-dem', opacity: 0 }
@@ -149,6 +154,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65 },
             { layer: 'zoning-r', opacity: 0 }
             ]
@@ -179,6 +185,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
                 ],
@@ -210,6 +217,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
                 ],
@@ -235,6 +243,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
                 ],
@@ -260,6 +269,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
                 ],
@@ -285,6 +295,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
                 ],
