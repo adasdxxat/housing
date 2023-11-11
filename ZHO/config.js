@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/ds2333/clhps6dlv00nm01qncoxb7mim',
+    style: 'mapbox://styles/ds2333/cloub7iuv00kv01qne5454zd1',
     accessToken: 'pk.eyJ1IjoiZHMyMzMzIiwiYSI6ImNsOHg1cGplZTAzYXozb3FzYWNnYmNsZjYifQ.3SePdbb2OGmTcQfqHc2cUw',
     showMarkers: false,
     //projection: 'equirectangular',
@@ -11,7 +11,7 @@ var config = {
     title: 'Zoning for Housing Opportunities',
     subtitle: 'CRP6430 Affordable Housing Policies and Programs',
     byline: 'By Ada (Duxixi) Shen',
-    footer: 'Data Source: See <a href = "https://www.nyc.gov/site/planning/data-maps/open-data/dwn-housing-database.page#housingdevelopmentunit">NYC DCP Housing Dataset</a> <p> Image Sources: Google Map <p> Full Report: See <a href = "https://www.nyc.gov/assets/planning/download/pdf/plans-studies/city-of-yes/city_of_yes_info_session_102722.pdf">City of Yes',
+    footer: 'Data Source: See <a href = "https://www.nyc.gov/site/planning/data-maps/open-data/dwn-housing-database.page#housingdevelopmentunit">NYC DCP Housing Dataset</a>   |   Image Sources: Google Map   |   Full Report: See <a href = "https://www.nyc.gov/assets/planning/download/pdf/plans-studies/city-of-yes/city_of_yes_info_session_102722.pdf">City of Yes',
     chapters: [
         {
             id: 'redlining0',
@@ -32,6 +32,7 @@ var config = {
             onChapterEnter: [
             { layer: 'nta-poin-2110', opacity: 0 },
             { layer: 'redlining-nyc-line', opacity: 0 },
+            { layer: 'satellite', opacity: 0 },
             { layer: 'nyc-bound', opacity: 0.65 },
             { layer: 'zoning-r', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0 },
@@ -61,6 +62,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0 },
             { layer: 'redlining-nyc-line', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0.65 },
+            { layer: 'satellite', opacity: 0 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0 },
             { layer: 'zoning-r', opacity: 0 },
@@ -88,6 +90,7 @@ var config = {
             onChapterEnter: [
             { layer: 'nta-poin-2110', opacity: 0.65 },
             { layer: 'redlining-nyc-line', opacity: 0 },
+            { layer: 'satellite', opacity: 0 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
             { layer: 'housing-nta-2110', opacity: 0 },
@@ -117,6 +120,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 1 },
             { layer: 'zoning-r', opacity: 1 },
+            { layer: 'satellite', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0 },
@@ -143,6 +147,7 @@ var config = {
             callback: '',
             onChapterEnter: [
             { layer: 'nta-poin-2110', opacity: 0},
+            { layer: 'satellite', opacity: 0 },
             { layer: 'redlining-nyc-line', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
             { layer: 'nyc-bound', opacity: 0 },
@@ -154,6 +159,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0 },
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'satellite', opacity: 0 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65 },
             { layer: 'zoning-r', opacity: 0 }
@@ -186,6 +192,7 @@ var config = {
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
             { layer: 'nyc-bound', opacity: 0 },
+            { layer: 'satellite', opacity: 1 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
                 ],
@@ -217,6 +224,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'satellite', opacity: 1 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
@@ -243,6 +251,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'satellite', opacity: 1 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
@@ -269,6 +278,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'satellite', opacity: 1 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
@@ -295,6 +305,7 @@ var config = {
             { layer: 'nta-poin-2110', opacity: 0},
             { layer: 'redlining-nyc-line', opacity: 0},
             { layer: 'redlining-nyc-area', opacity: 0},
+            { layer: 'satellite', opacity: 1 },
             { layer: 'nyc-bound', opacity: 0 },
             { layer: 'housing-nta-2110', opacity: 0.65},
             { layer: 'zoning-r', opacity: 0 }
